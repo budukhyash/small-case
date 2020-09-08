@@ -29,7 +29,7 @@ server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
-mongoose.connect("mongodb+srv://yash:yashmongo@url-shortner.inuab.gcp.mongodb.net/url-shortner?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb-uri", {useNewUrlParser: true, useUnifiedTopology: true });
 
 /**
  * Normalize a port into a number, string, or false.
